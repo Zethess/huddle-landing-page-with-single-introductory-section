@@ -11,138 +11,147 @@
     /* font */
     --font-family-body: 'Open Sans', sans-serif;
     --font-family-header: 'Poppins', sans-serif;
-  }
-  *{
-    box-sizing: border-box; 
-    margin: 0;
-    padding: 0;
-  }
-  body{
-    background-image: url('./images/bg-mobile.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: var(--violet);
-    color: var(--white);
-    display: flex;
-    font-family: var(--font-family-header);
-    font-weight: 400;
-    font-size: 13px;
-    /* background-position: */
-  }
+}
+*{
+	box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url('./images/bg-mobile.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: var(--violet);
+	color: var(--white);
+	display: flex;
+	font-family: var(--font-family-header);
+	font-weight: 400;
+	font-size: 13px;
+}
 
-  .main{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    width: 100vw;
-    padding: 35px 45px;
-  }
-  .main_logo img{
-    width: 42%;
-  }
-  .main_content img{
-    width: 100%;
-    margin: 40px 0 30px 0;
-  }
-  .main_content_text{
-    text-align: center;
-  }
-  .main_content_text h1{
-    padding:30px 0 0 0 ;
-    line-height: 40px;
-  }
-  .main_content_text p{
-    padding:15px 13px ;
-    font-size: 17px;
-    font-family: var(--font-family-body);
-    margin-bottom: 18px; 
-  }
+.main{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	width: 100vw;
+	padding: 35px 45px;
+}
+.main_logo img{
+	width: 42%;
+}
+.main_content img{
+	width: 100%;
+	margin: 40px 0 30px 0;
+}
+.main_content_text{
+	text-align: center;
+}
+.main_content_text h1{
+	padding:30px 0 0 0 ;
+	line-height: 40px;
+}
+.main_content_text p{
+	padding:15px 13px ;
+	font-size: 17px;
+	font-family: var(--font-family-body);
+	margin-bottom: 18px; 
+}
 
-  .main_content_text a{
-    background-color: var(--white);
-    border-radius: 25px;
-    text-decoration: none;
-    padding: 10px 75px;
-    box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.34);
-  }
+.main_content_text a{
+	background-color: var(--white);
+	border-radius: 25px;
+	text-decoration: none;
+	color: var(--violet);
+	padding: 10px 75px;
+	box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.34);
+}
 
-  .main_social{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 49px;
-    font-size: 14px;
-  }
+.main_social{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 49px;
+	font-size: 14px;
+}
 
-  .fa-brands{
-    color: var(--white);
-    border: 1px solid white;
-    border-radius: 50%;
-    padding: 10px;
-    margin:0 6px ;
-  }
+.fa-brands{
+	color: var(--white);
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 10px;
+	margin:0 6px ;
+}
 
-  .fa-facebook-f{
-    border-radius: 90%;
-    padding-right: 12px;
-    padding-left: 12px;
-  }
+.fa-facebook-f{
+	border-radius: 90%;
+	padding-right: 12px;
+	padding-left: 12px;
+}
 
-  .main_content_text a:hover{
-    background-color: var(--soft-Magenta);
-    color: var(--white);
-  }
+.main_content_text a:hover{
+	background-color: var(--soft-Magenta);
+	color: var(--white);
+}
 
-  .fa-brands:hover{
-    color: var(--soft-Magenta);
-    border-color: var(--soft-Magenta);
-  }
+.fa-brands:hover{
+	color: var(--soft-Magenta);
+	border-color: var(--soft-Magenta);
+}
 
-  @media only screen and (min-width: 768px) {
-		body{
-			background-image: url('./images/bg-desktop.svg');
-			font-size: 22px;
-		}
+@media only screen and (min-width: 768px) {
+	body{
+		background-image: url('./images/bg-desktop.svg');
+		font-size: 22px;
+	}
+
 	.main_content{
 		display: flex;
 	}
+
 	.main{
 		padding: 55px 70px;
 	}
+
 	.main_logo img{
 		width: 13%;
-		margin-bottom: 50px;
+		/* margin-bottom: 50px; */
 	}
+
 	.main_content img{
 		margin: 40px 0 30px 0;
 	}
-	.main_content_text{
 
+	.main_content_text{
     text-align: left;
 		margin: 60px 30px 30px 60px;
-	
   }
+
 	.main_content_text h1{
     padding:30px 25% 0 0 ;
     line-height: 64px;
   }
+
 	.main_content_text p{
     padding:15px 26% 15px 0 ;
     font-size: 18px;
   }
+
 	.main_content_text a{
 		padding: 14px 60px;
 		font-size: 18px;
 	}
+	
 	.main_social{
 		display: flex;
-		justify-content:right;
+		justify-content:flex-end;
 		font-size: 18px;
+		margin-top: 0;
   }
+
 	.fa-facebook-f{
     padding-right: 13px;
     padding-left: 13px;
   }
 
-  }
+}
   
